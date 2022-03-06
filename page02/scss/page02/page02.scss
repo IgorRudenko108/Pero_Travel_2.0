@@ -1,0 +1,24 @@
+
+//-- page02 ----------------------------
+.page02-main{
+	background-color: #FBFBFB;
+}
+
+.page02-main__wrapper{
+   display: flex;
+   width: 100%;
+   max-width: 1230px;
+   padding: 0 15px;
+   margin: 0 auto;
+
+   @media (max-width: 991.98px) {
+      flex-direction: column;
+   }
+
+   @media (max-width: 424.98px) {
+      padding: 0;
+   }
+}
+
+
+//-- /page02 ----------------------------

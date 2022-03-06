@@ -1,0 +1,280 @@
+.page03-calendar{
+   position: relative;
+   margin-bottom: 120px;
+
+
+   &__body {
+      width: 100%;
+      max-width: 1920px;
+   }
+
+   &__bg{
+      width: 60%;
+      max-width: 100%;
+      border-radius: 0 10px 10px 0;
+      height: 900px;
+      object-fit: cover;
+
+      @media (max-width: 991.98px) {
+         width: 100%;
+         border-radius: 0;
+      }
+      @media (max-width: 575.98px) {
+         height: 600px;
+      }
+   }
+
+   &__content{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      @media (max-width: 991.98px) {
+        position: static;
+        margin-top: -40%;
+      }
+      @media (max-width: 767.98px) {
+        margin-top: -50%;
+      }
+      @media (max-width: 575.98px) {
+         margin-top: -60%;
+      }
+   }
+
+   &__title{
+      font-size: 24px;
+      padding: 120px 35px 0;
+      margin-bottom: 90px;
+
+      @media (max-width: 991.98px) {
+         text-align: center;
+         margin: 0 auto;
+         width: 560px;
+         margin-bottom: 0;
+         padding-bottom: 30px;
+         padding-top: 30px;
+         color: #fff;
+         border-radius: 10px 10px 0 0;
+         background-color: #2C2A2A;
+      }
+      @media (max-width: 575.98px) {
+         border-radius: 0;
+         width: 400px;
+         font-size: 18px;
+      }
+      @media (max-width: 424.98px) {
+         width: 100%;
+      }
+   }
+
+   &__container {
+      width: 100%;
+      max-width: 1440px;
+      padding: 0 60px 0 0;
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      @media (max-width: 991.98px) {
+         padding: 0;
+      }
+   }
+
+   &__inner {
+      width: 630px;
+      // width: 50%;
+      max-width: 100%;
+      margin-left: auto;
+      background-color: transparent;
+      padding: 0;
+      
+      @media (max-width: 991.98px) {
+         width: 100%;
+      }
+   }
+}
+
+ 
+
+//-----------------------------------
+.container .cal {
+   margin: 0 auto;
+   background-color: #EDEDED;
+}
+ 
+.cal {
+   display: block;
+   width: 560px;
+   height: 540px;
+   border-radius: 10px;
+   margin: 0 auto;
+
+   @media (max-width: 991.98px) {
+      border-radius:  0 0 10px 10px;
+   }
+   @media (max-width: 575.98px) {
+      border-radius: 0;
+      width: 400px;
+      height: 450px;
+   }
+   @media (max-width: 424.98px) {
+      width: 100%;
+   }
+}
+
+ 
+tbody{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+thead{
+   display: flex;
+   justify-content: center;
+
+   th{
+      padding: 0  15px;
+
+      @media (max-width: 575.98px) {
+        padding: 0 10px;
+      }
+      
+   }
+}
+
+ 
+
+.cal a {
+   text-decoration: none;
+}
+
+.cal caption {
+   border-radius: 10px;
+   width: 500px;
+   display: block;
+   margin: 0 auto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 29px;
+   text-align: center;
+   color: #0499DD;
+   padding: 50px 50px 20px;
+
+   @media (max-width: 991.98px) {
+    padding-top: 30px;
+   }
+   @media (max-width: 575.98px) {
+      width: 400px;
+      padding: 30px 15px 20px;
+   }
+   @media (max-width: 424.98px) {
+      width: 100%;
+      padding: 30px 5px 20px;
+
+   }
+}
+
+.cal caption a {
+   display: block;
+   line-height: 100%;
+   padding: 0 10px;
+   font-size: 30px;
+   color: #0499DD;
+}
+
+.cal caption .prev {
+   float: left;
+}
+
+.cal caption .next {
+   float: right;
+}
+
+.cal th, .cal td {
+   width: 30px;
+   text-align: center;
+}
+
+.cal th:first-child, .cal td:first-child {
+   border-left: 0;
+}
+
+ .cal th {
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 22px;
+   color: #282828;
+   text-transform: uppercase;
+   @media (max-width: 424.98px) {
+      font-size: 14px;
+   }
+}
+
+ .cal td {
+   font-size: 11px;
+   font-weight: bold;
+   border-top: 1px solid #EDEDED;
+   border-left: 1px solid #EDEDED;
+   width: 60px;
+   height: 60px;
+
+   @media (max-width: 575.98px) {
+      width: 50px;
+      height: 50px;
+   }
+}
+
+.cal td a {
+   clear: both;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 22px;
+   text-align: center;
+   color: #282828;
+   background-color: #EDEDED;
+}
+
+ .cal td a:hover, .cal td.off a {
+   background: #EDEDED;
+}
+
+.cal td.off a {
+   color: #b3b3b3;
+}
+
+.cal td:hover {
+   background: transparent;
+   border-radius: 10px;
+   border: 2px solid #6dafbf; 
+   // padding: 15px;
+   transition: background .3s ease;
+}
+
+.cal td.active a, .cal td a:active {
+   color: #f3f3f3;
+   background: #6dafbf;
+   border-radius: 10px;
+   padding: 15px;
+   @media (max-width: 575.98px) {
+      padding: 10px;
+   }
+}
+
+.cal td.active:first-child a, .cal td:first-child a:active {
+   border-left: 0;
+   margin-left: 0;
+}
+.cal td.active:last-child a, .cal td:last-child a:active {
+   border-right: 0;
+   margin-right: 0;
+}
+.cal tr:last-child td.active a, .cal tr:last-child td a:active {
+   border-bottom: 0;
+   margin-bottom: 0;
+}
+ 
+ 

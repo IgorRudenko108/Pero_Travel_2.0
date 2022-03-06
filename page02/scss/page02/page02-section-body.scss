@@ -1,0 +1,244 @@
+.proposals{
+   width: 70%;
+   margin-left: 30px;
+   @media (max-width: 991.98px) {
+      width: 100%;
+      margin-left: 0;
+   }
+
+   &__container{
+      @media (max-width: 575.98px) {
+         width: 100%;
+         margin-left: 0 -15px;
+      }
+   }
+
+   &__title {
+      padding-left: 0;
+      margin-bottom: 40px;
+      margin-left: 15px;
+
+      @media (max-width: 991.98px) {
+         display: flex;
+         justify-content: center;
+      }
+   }
+   
+   &__body {
+      padding-right: 15px;
+      padding-left: 10px;
+      overflow: hidden;
+
+      @media (max-width: 575.98px) {
+         padding: 0;
+      }
+   }
+   
+   &__item {
+      width: 100%;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px rgb(0 0 0 / 9%);
+      margin-bottom: 20px;
+
+      @media (max-width: 424.98px) {
+         border-radius: 0;
+         box-shadow: 0px 0px 0px rgb(0 0 0 / 0);
+      }
+   }
+
+   .proposals__card {
+      display: flex;
+
+      @media (max-width: 1199.98px) {
+         flex-direction: column;
+         margin-bottom: 30px;
+      }
+      @media (max-width: 991.98px) {
+         flex-direction: row;
+      }
+      @media (max-width: 767.98px) {
+         flex-direction: column;
+      }
+   }
+
+   &__card-img {
+      position: relative;
+      overflow: hidden;
+      padding-right: 30%;
+      border-radius: 10px 0 0 10px;
+
+      @media (max-width: 1199.98px) {
+         padding-right: 0;
+         padding-top: 70%;
+         border-radius: 10px 10px 0 0;
+      }
+      @media (max-width: 991.98px) {
+         padding-top: 0;
+         padding-right: 230px;
+         border-radius: 10px 0 0 10px;
+      }
+      @media (max-width: 767.98px) {
+         padding-top: 70%;
+         border-radius: 10px 10px 0 0;
+      }
+      @media (max-width: 424.98px) {
+         border-radius: 0;
+      }
+
+      img{
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__card-inner {
+      padding: 25px 40px;
+
+      @media (max-width: 575.98px) {
+       padding: 25px 15px;
+      }
+   }
+
+   .proposals__card-subtitle {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      color: #FFC700;
+      margin-bottom: 3px;
+   }
+
+   &__card-title {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      color: #282828;
+      margin-bottom: 20px;
+   }
+
+   &__info-box {
+      display: flex;
+      margin-bottom: 20px;
+
+      @media (max-width: 1199.98px) {
+         flex-wrap: wrap;
+      }
+   }
+
+   &__info-item {
+      margin-right: 30px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 22px;
+
+      @media (max-width: 1199.98px) {
+         margin-bottom: 5px;
+      }
+      @media (max-width: 575.98px) {
+         margin-bottom: 10px;
+      }
+
+      &:nth-child(1){
+         background-image: url(@img/page02/cards/coins-icon.png);
+      }
+      &:nth-child(2){
+         background-image: url(@img/page02/cards/coins-icon.png);
+      }
+      &:nth-child(3){
+         background-image: url(@img/page02/cards/clock-icon.png);
+         background-size: 17px;
+         background-position: 0 3px;
+      }
+   }
+
+   &__info-number {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      color: #0499DD;
+      padding-left: 30px;
+   }
+
+   &__info-text {
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 12px;
+   }
+
+   &__card-text {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      border-left: 3px solid #0499DD;
+      padding-left: 20px;
+      margin-bottom: 20px;
+
+   }
+
+   &__card-bottom {
+      display: flex;
+      align-items: center;
+   }
+
+   &__like-btn {
+      background-color: #DFDEDE;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+      width: 40px;
+      height: 40px;
+
+      background-image: url(@img/page02/cards/heart-icon.svg);
+      background-repeat: no-repeat;
+      background-position: 50% 60%;
+
+      &._active {
+         background-color: transparent;
+         border: 2px solid #0499DD;
+         background-image: url(@img/page02/cards/heart-icon--active.svg);
+      }
+   }
+}
+
+
+// -----------------------------------
+.proposals__bottom {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 25px 0 40px;
+
+   &__bottom-wrapper{
+      display: flex;
+      align-items: center;
+   }
+}
+
+
+
+.arrow-prev,
+.arrow-next {
+   width: 15px;
+   height: 12px;
+   stroke-width: 4px;
+}
+.proposals__bottom-link {
+   padding: 0 5px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 16px;
+   color: #000;
+
+   &._active{
+      color: #0499DD;
+   }
+}
+
+

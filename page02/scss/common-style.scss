@@ -1,0 +1,133 @@
+.btn {
+	z-index: 5;
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 17px;
+   color: #fff;
+   border-radius: 60px;
+   padding: 15px 50px;
+   background: linear-gradient(90deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/ 200%;
+   transition: 0.5s;
+   --c1: #00739F;
+   --c2: #24C5C9;
+
+   &:hover { --x: 100%; }
+}
+
+
+.section-text{
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 17px;
+   color: #000;
+}
+
+
+//--- burger ---------------------------
+.menu__icon{
+   display: none;
+}
+@media (max-width: 767px) {
+	.menu__icon {
+		z-index: 5;
+		display: block;
+		position: absolute;
+      right: 20px;
+      top: 30px;
+		width: 35px;
+		height: 24px;
+		cursor: pointer;
+	}
+	.menu__icon span,
+	.menu__icon::before,
+	.menu__icon::after {
+		left: 0;
+		position: absolute;
+		height: 10%;
+		width: 100%;
+		transition: all 0.3s ease 0s;
+		background-color: #fff;
+		z-index: 99;
+	}
+	.menu__icon::before,
+	.menu__icon::after {
+		content: "";
+	}
+	.menu__icon::before {
+		top: 0;
+	}
+	.menu__icon::after {
+		bottom: 0;
+	}
+	.menu__icon span {
+		top: 50%;
+		transform: scale(1) translate(0px, -50%);
+	}
+
+	.menu__icon._active span {
+		transform: scale(0) translate(0px, -50%);
+	}
+	.menu__icon._active::before {
+		top: 50%;
+		transform: rotate(-45deg) translate(0px, -50%);
+	}
+	.menu__icon._active::after {
+		bottom: 50%;
+		transform: rotate(45deg) translate(0px, 50%);
+	}
+}
+//--- /burger --------------------------
+
+
+
+
+//-- animation ----------------------------
+._anim-show-up {
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 1s ease 0s;
+}
+._anim-show-up._active,
+._active ._anim-show-up {
+	opacity: 1;
+	transform: translate(0px, 0px);
+}
+
+
+._anim-show-down {
+	transform: translate(0px, -120%);
+	opacity: 0;
+	transition: all 1s ease 0s;
+}
+._anim-show-down._active,
+._active ._anim-show-down {
+	opacity: 1;
+	transform: translate(0px, 0px);
+}
+
+//--------------------------
+._anim-show-left {
+	transform: translate(-120%, 0px);
+	opacity: 0;
+	transition: all 1s ease 0s;
+}
+._anim-show-left._active,
+._active ._anim-show-left {
+	opacity: 1;
+	transform: translate(0px, 0px);
+}
+//--------------------------
+._anim-show-right {
+	transform: translate(120%, 0px);
+	opacity: 0;
+	transition: all 1s ease 0s;
+}
+._anim-show-right._active,
+._active ._anim-show-right {
+	opacity: 1;
+	transform: translate(0px, 0px);
+}
+
+//-- /animation ----------------------------
+

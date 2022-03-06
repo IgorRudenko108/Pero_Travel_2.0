@@ -1,0 +1,609 @@
+.aside{
+  width: 30%;
+  min-width: 340px;
+  height: fit-content;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.09);
+  border-radius: 6px; 
+  background-color: #fff;
+
+  @media (max-width: 991.98px) {
+    width: 100%;
+    min-width: 295px;
+    margin-bottom: 80px;
+  }
+  @media (max-width: 424.98px) {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    border-radius: 0; 
+  }
+
+  &__inner{
+    padding: 25px;
+
+    @media (max-width: 991.98px) {
+      padding: 25px 10px;
+    }
+  }
+
+  &__title{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0499DD;
+    margin-bottom: 30px;
+    @media (max-width: 991.98px) {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+      margin-bottom: 40px;
+
+    }
+  }
+}
+
+
+/*--- spollers ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.block {
+   margin: 0px 0px 10px 0px;
+ }
+
+ .block__item {
+   margin: 0px 0px 40px 0px;
+   padding-bottom: 40px;
+   border-bottom: 2px solid #EDEDED;
+ }
+
+ .block__item--1{
+  padding-bottom: 30px;
+ }
+ 
+ .block__title {
+   font-family: Montserrat;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   font-weight: 600;
+   text-align: left;
+   font-size: 14px;
+   background-color: transparent;
+   color: #000;
+   padding: 10px;
+   position: relative;
+   border-radius: 6px;
+   text-transform: none;
+   margin-bottom: 20px;
+ }
+ .block._init .block__title {
+   cursor: pointer;
+ }
+ .block._init .block__title {
+   padding: 10px 40px 10px 10px;
+ }
+ .block._init .block__title::before,
+ .block._init .block__title::after {
+   content: "";
+   width: 20px;
+   height: 2px;
+   background-color: #0499DD
+   ;
+   position: absolute;
+   right: 10px;
+   top: 20px;
+   transition: transform 0.3s ease 0s;
+ }
+ .block._init .block__title::after {
+   transform: rotate(-90deg);
+ }
+ .block._init .block__title._active::after {
+   transform: rotate(0deg);
+ }
+ .block__text {
+   line-height: 130%;
+ }
+ 
+ button .block__title:active {
+   background-color: rgb(249, 249, 103);
+ }
+/*--- /spollers ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+ 
+
+/*--- "Стоимость" ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Chrome, Safari, Edge, Opera */
+.filters-price__input::-webkit-outer-spin-button,
+.filters-price__input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+// /* Firefox */
+.filters-price__input[type=number] {
+	-moz-appearance: textfield;
+}
+
+.filters-price__inputs {
+	display: flex;
+	justify-content: space-between;
+}
+
+.filters-price__label {
+	display: flex;
+	align-items: center;
+	width: 133px;
+	height: 40px;
+	border: 1px solid #D9D9D9;
+	border-radius: 4px;
+	padding: 0 10px;
+
+  
+}
+
+.filters-price__text {
+	font-size: 14px;
+	color: #808080;
+}
+
+.filters-price__text:first-child {
+	margin-right: 10px;
+}
+
+.filters-price__text:last-child {
+	margin-left: 10px;
+}
+
+.filters-price__input {
+	border: none;
+	color: #4D4D4D;
+	font-size: 14px;
+}
+
+.filters-price__title {
+	margin-bottom: 20px;
+}
+
+.filters-price__slider {
+	margin-bottom: 20px;
+  margin-top: 30px;
+  @media (max-width: 991.98px) {
+    width: 95%;
+    margin: 30px auto 20px;
+    
+  }
+}
+// ------------------------------------------------
+.noUi-target {
+	background-color: #bfbfbf;
+	border: none;
+	border-radius: 100px;
+	box-shadow: none;
+	height: 3px;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+	display: none;
+}
+
+.noUi-handle {
+	box-shadow: none;
+	border-radius: 100%;
+	border: 4px solid #5d71dd;
+}
+
+.noUi-horizontal .noUi-handle {
+	width: 20px;
+	height: 20px;
+	top: -9px;
+  cursor: pointer;
+}
+
+.noUi-horizontal .noUi-handle-upper {
+	right: 0;
+}
+
+.noUi-connect{
+  background-color: #5d71dd;
+}
+// ------------------------------------------------
+.filters-price__label{
+  height: 30px;
+  border-radius: 40px;
+}
+/*--- /"Стоимость" ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--- "Количество человек" ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.block__inner{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 15px;
+
+  @media (max-width: 991.98px) {
+    padding-left: 0;
+  }
+}
+
+.radio {
+  position: relative;
+  margin: 13px 8px;
+}
+
+.radio__input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.radio__label {
+  padding-left: 70px;
+  font-size: 14px;
+  color: #444;
+  cursor: pointer;
+}
+
+.radio__input:checked + .radio__label:before {
+  border-color: #0499DD;
+}
+
+.radio__input:checked + .radio__label:after {
+  opacity: 1;
+}
+
+//-- radio__label -------------------
+.radio__label:before {
+  content: "1 чел.";
+  display: block;
+  width: 70px;
+  height: 30px;
+  border: 1px solid #EDEDED;
+  background-color: #fff;
+  border-radius: 40px;
+  text-align: center;
+  padding-top: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: border .1s linear;
+  padding-top: 8px;
+
+}
+
+.radio__label:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 35px;
+  background-color: #0499DD;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  transition: opacity .1s linear;
+  border-radius: 40px;
+  text-align: center;
+  padding-top: 8px;
+
+}
+//-- /radio__label -------------------
+
+//-- radio__label--1 -------------------
+.radio__label--1:before {
+  content: "1 чел.";
+  width: 80px;
+  height: 35px;
+}
+
+.radio__label--1:after {
+  content: "1 чел.";
+  width: 80px;
+  height: 35px;
+}
+//-- /radio__label--1 -------------------
+
+
+//-- radio__label--2 -------------------
+.radio__label--2:before {
+  content: "2 чел.";
+  width: 80px;
+  height: 35px;
+}
+.radio__label--2:after {
+  content: "2 чел.";
+  width: 80px;
+  height: 35px;
+}
+//-- /radio__label--2 -------------------
+
+//-- radio__label--3 -------------------
+.radio__label--3:before {
+  content: "3 чел.";
+  width: 80px;
+  height: 35px;
+}
+.radio__label--3:after {
+  content: "3 чел.";
+  width: 80px;
+  height: 35px;
+}
+//-- /radio__label--3 -------------------
+
+
+//-- radio__label--4 -------------------
+.radio__label--4:before {
+  content: "4 чел.";
+  width: 80px;
+  height: 35px;
+}
+.radio__label--4:after {
+  content: "4 чел.";
+  width: 80px;
+  height: 35px;
+}
+//-- /radio__label--4 -------------------
+
+
+//-- radio__label--5 -------------------
+.radio__label--5:before {
+  content: "5 чел.";
+  width: 80px;
+  height: 35px;
+}
+.radio__label--5:after {
+  content: "5 чел.";
+  width: 80px;
+  height: 35px;
+}
+//-- /radio__label--5 -------------------
+
+
+//-- radio__label--6 -------------------
+.radio__label--6:before {
+  content: "6 чел.";
+  width: 80px;
+  height: 35px;
+}
+.radio__label--6:after {
+  content: "6 чел.";
+  width: 80px;
+  height: 35px;
+}
+//-- /radio__label--6 -------------------
+
+
+//-- radio__label--7 -------------------
+.radio__label--7:before {
+  content: "7 чел.";
+  width: 80px;
+  height: 35px;
+}
+.radio__label--7:after {
+  content: "7 чел.";
+  width: 80px;
+  height: 35px;
+}
+//-- /radio__label--7 -------------------
+
+
+//-- radio__label--8 -------------------
+.radio__label--8:before {
+  content: "8 чел.";
+  width: 80px;
+  height: 35px;
+}
+.radio__label--8:after {
+  content: "8 чел.";
+  width: 80px;
+  height: 35px;
+}
+//-- /radio__label--8 -------------------
+
+//-- radio__label--9 -------------------
+.radio__label--9:before {
+  content: "9 чел.";
+  width: 80px;
+  height: 35px;
+}
+.radio__label--9:after {
+  content: "9 чел.";
+  width: 80px;
+  height: 35px;
+}
+//-- /radio__label--9-------------------
+
+//-- radio__label--10 -------------------
+.radio__label--10:before {
+  content: "10 чел.";
+  width: 90px;
+  height: 35px;
+}
+.radio__label--10:after {
+  content: "10 чел.";
+  width: 90px;
+  height: 35px;
+}
+//-- /radio__label--10 -------------------
+
+//-- radio__label--11 -------------------
+.radio__label--11:before {
+  content: "Больше 10 чел.";
+  width: 150px;
+  height: 35px;
+  margin-left: 13px;
+}
+.radio__label--11:after {
+  content: "Больше 10 чел.";
+  width: 150px;
+  height: 35px;
+  margin-left: 13px;
+}
+//-- /radio__label--11 -------------------
+/*--- /"Количество человек" ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--- "Место" ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.place-radio {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.block__place{
+  @media (max-width: 991.98px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 575.98px) {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+}
+
+.place-radio__input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.place-radio__label {
+  font-family: Montserrat;
+  padding-left: 25px;
+  font-size: 1rem;
+  color: #444;
+  cursor: pointer;
+
+  @media (max-width: 991.98px) {
+    margin-right: 25px;
+  }
+}
+
+.place-radio__label:before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  transition: border .1s linear;
+}
+
+.place-radio__label:after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 9px;
+
+  background-color: #0499DD
+  ;
+  border-radius: 50%;
+  opacity: 0;
+
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 2;
+
+  transition: opacity .1s linear;
+}
+
+.place-radio__input:checked + .place-radio__label:before {
+  border-color: #0499DD;
+}
+
+.place-radio__input:checked + .place-radio__label:after {
+  opacity: 1;
+}
+/*--- "Место" ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--- "Длительность" ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.filters-time__inputs {
+	display: flex;
+	justify-content: space-between;
+}
+
+.filters-time__label {
+	display: flex;
+  justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 40px;
+	border: 1px solid #D9D9D9;
+	border-radius: 4px;
+	padding: 0 10px;
+}
+
+.filters-time__text {
+	font-size: 14px;
+	color: #808080;
+}
+
+.filters-time__text:first-child {
+	margin-right: 10px;
+}
+
+.filters-time__text:last-child {
+	margin-left: 10px;
+}
+
+.filters-time__input {
+	border: none;
+	color: #4D4D4D;
+	font-size: 14px;
+}
+
+.filters-time__title {
+	margin-bottom: 20px;
+}
+
+.filters-time__slider {
+	margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.filters-time__label{
+  height: 35px;
+  border-radius: 40px;
+}
+
+
+/*--- /"Длительность" ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--- "Дата" ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.date__input{
+ border-radius: 40px;
+ box-shadow: none;
+ border: 1px solid #EDEDED;
+}
+/*--- /"Дата" ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.date__btn{
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 25px;
+  padding: 15px 30px;
+}
+
+.date__reset{
+  display: block;
+  margin: 0 auto;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  padding-left: 20px;
+  background-image: url(@img/page02/icons/x.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
