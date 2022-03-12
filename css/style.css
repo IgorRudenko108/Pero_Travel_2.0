@@ -956,6 +956,16 @@ section {
      object-fit: cover;
 }
 
+.header__slide .header__play-poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .header__play-button {
   position: absolute;
   top: 50%;
