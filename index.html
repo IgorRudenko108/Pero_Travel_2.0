@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220305195431">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220312195629">
 
 	<title>Pero travel</title>
 </head>
@@ -26,7 +26,7 @@
                <nav class="menu__body">
                   <ul class="menu__list">
                      <li><a class="menu__link" data-goto="#about" href="../index.html">Главная</a></li>
-                     <li><a class="menu__link" data-goto="#offers" target="_blanck" href="https://igorrudenko108.github.io/Pero_Travel/page02.html">Экскурсии</a></li>
+                     <li><a class="menu__link" data-goto="#offers" href="../page02.html">Экскурсии</a></li>
                      <li><a class="menu__link" data-goto="#form" href="#">Личный кабинет</a></li>
                   </ul>
                </nav>
@@ -56,7 +56,7 @@
                </h1>
             </div>
 
-            <a class="header__link-btn btn" target="_blanck" href="https://igorrudenko108.github.io/Pero_Travel/page02.html">К экскурсиям
+            <a class="header__link-btn btn" href="../page02.html">К экскурсиям
                <span>
                   <svg class="arrow-line-right">
                       <use xlink:href="#arrow-line-right"></use>
@@ -101,47 +101,36 @@
             <div class="header__slider-wrapper swiper-wrapper">
                
                <div class="header__slide swiper-slide">
-
-                  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/DyVQRBi-SCI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-
-                  <video preload="auto" loop autoplay muted poster="img/header/header-slide-1.jpg">
-                     <source src="../video/slider-video-1.webm" type="video/webm">
-                     <source src="../video/slider-video-1.mp4" type="video/mp4">
-                  </video>
-
-                  <div class="header__play-button">
-                     <svg class="play-button">
-                        <use xlink:href="#play-button"></use>
-                     </svg>
-                  </div>
+                  <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=l6pDOwNeTrg&ab_channel=%D0%94%D0%B0%D1%80%D1%8C%D1%8F%D0%A2%D0%B8%D0%B3%D1%80%D1%91%D0%BD%D0%BE%D0%BA">
+                     <picture><source srcset="img/header/header-slide-1.webp" type="image/webp"><img class="header__play-poster" src="img/header/header-slide-1.jpg" alt="slide-1"></picture>
+                     <div class="header__play-button">
+                        <svg class="play-button">
+                           <use xlink:href="#play-button"></use>
+                        </svg>
+                     </div>
+                  </a>
                </div>
 
                <div class="header__slide swiper-slide">
-                  
-                  <video preload="metadata" loop autoplay muted poster="img/header/header-slide-2.jpg">
-                     <source src="../video/slider-video-1.webm" type="video/webm">
-                     <source src="../video/slider-video-1.mp4" type="video/mp4">
-                  </video>
-
-                  <div class="header__play-button">
-                     <svg class="play-button">
-                        <use xlink:href="#play-button"></use>
-                     </svg>
-                  </div>
+                  <a data-fslightbox="gallery" href="https://www.youtube.com/embed/DyVQRBi-SCI?controls=0">
+                     <picture><source srcset="img/header/header-slide-2.webp" type="image/webp"><img class="header__play-poster" src="img/header/header-slide-2.jpg" alt="slide-2"></picture>
+                     <div class="header__play-button">
+                        <svg class="play-button">
+                           <use xlink:href="#play-button"></use>
+                        </svg>
+                     </div>
+                  </a>
                </div>
 
                <div class="header__slide swiper-slide">
-
-                  <video preload="auto" loop autoplay muted poster="img/header/header-slide-3.jpg">
-                     <source src="../video/slider-video-1.webm" type="video/webm">
-                     <source src="../video/slider-video-1.mp4" type="video/mp4">
-                  </video>
-
-                  <div class="header__play-button">
-                     <svg class="play-button">
-                        <use xlink:href="#play-button"></use>
-                     </svg>
-                  </div>
+                  <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=evSn0cGIxfs&ab_channel=OleksandrOmelchuk">
+                     <picture><source srcset="img/header/header-slide-3.webp" type="image/webp"><img class="header__play-poster" src="img/header/header-slide-3.jpg" alt="slide-3"></picture>
+                     <div class="header__play-button">
+                        <svg class="play-button">
+                           <use xlink:href="#play-button"></use>
+                        </svg>
+                     </div>
+                  </a>
                </div>
 
             </div>
@@ -187,7 +176,7 @@
                         "Обзорная по Большому Сочи":
                         Экскурсия начнется с подъёма на гору Большой Ахун - это  высшая точка (665 метров) на побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная в 1935-36 годах по проекту архитектора С. И. Воробьева...
                      </p>
-                     <a target="_blanck" href="https://igorrudenko108.github.io/Pero_Travel/page03.html" class="popular__slide-btn btn">Подробнее</a>
+                     <a href="../page03.html" class="popular__slide-btn btn">Подробнее</a>
                   </div>
                </div>
             </div>
@@ -227,7 +216,7 @@
                      <p class="popular__slide-text">
                         Маршрут на Квадроциклах проходит по горной реке Мзымта вдоль белых скал и самшитовый лес к водопаду Глубокий Яр или "Пасть Дракона" (экскурсионное название).
                         Высота водопада 41,5 метр - это один из самых высоких водопадов Большого Сочи...                        </p>
-                     <a target="_blanck" href="https://igorrudenko108.github.io/Pero_Travel/page03.html" class="popular__slide-btn btn">Подробнее</a>
+                     <a href="../page03.html" class="popular__slide-btn btn">Подробнее</a>
                   </div>
                </div>
             </div>
@@ -248,7 +237,7 @@
                         Троице - Георгиевский женский монастырь расположен в селе Лесное в живописном месте, в котором гармонично сочетаются красота природы и красота архитектуры сотворенная руками человека.
                         Это удивительное место расположено совсем недалеко от Чёрного моря - всего в 20 километрах 
                      </p>
-                     <a target="_blanck" href="https://igorrudenko108.github.io/Pero_Travel/page03.html" class="popular__slide-btn btn">Подробнее</a>
+                     <a href="../page03.html" class="popular__slide-btn btn">Подробнее</a>
                   </div>
                </div>
             </div>
@@ -350,7 +339,7 @@
       
       <div class="offers__bottom">
          <p class="offers__bottom-text">Выбирайте на нашем сайте экскурсию, которая подходит именно вам и записывайтесь онлайн без очередей, просто и быстро!</p>
-         <a target="_blanck" href="https://igorrudenko108.github.io/Pero_Travel/page02.html" class="offers__bottom-btn btn">К экскурсиям 
+         <a href="../page02.html" class="offers__bottom-btn btn">К экскурсиям 
             <span>
                <svg class="arrow-line-right">
                   <use xlink:href="#arrow-line-right"></use>
@@ -763,6 +752,6 @@
 
 
 		
-		<script src="js/app.min.js?_v=20220305195431"></script>
+		<script src="js/app.min.js?_v=20220312195629"></script>
 	</body>
 </html>
