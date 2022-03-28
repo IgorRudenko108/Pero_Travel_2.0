@@ -5588,8 +5588,9 @@ thead th {
   }
 }
 
-@media (max-width: 575px) {
-  .menu__icon {
+@media (max-width: 575.98px) {
+  
+   .menu__icon {
     z-index: 5;
     display: block;
     position: absolute;
@@ -5653,9 +5654,7 @@ thead th {
         -ms-transform: rotate(45deg) translate(0px, 50%);
             transform: rotate(45deg) translate(0px, 50%);
   }
-}
-
-@media (max-width: 575.98px) {
+  
   .header__top {
     padding: 8px 0;
     position: fixed;
