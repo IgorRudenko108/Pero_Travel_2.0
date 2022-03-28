@@ -5726,6 +5726,8 @@ thead th {
 
   .menu__icon {
     display: block;
+    right: 30px;
+    top: 8px;
   }
 
   .menu__list {
